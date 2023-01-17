@@ -38,7 +38,8 @@
             productReviewMain.AddProductList(productReviews);
             //productReviewMain.RetriveTopRecords();
             //productReviewMain.RetriveAllRecords();
-            productReviewMain.RetriveAllRecordsGroupBy();
+            //productReviewMain.RetriveAllRecordsGroupBy();
+            productReviewMain.RetriveAllRecordsFields();
         }
     }
 }
