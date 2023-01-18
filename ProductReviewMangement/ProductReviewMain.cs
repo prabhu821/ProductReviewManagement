@@ -57,5 +57,12 @@ namespace ProductReviewMangement
             var result = this.productReviews.OrderByDescending(x => x.Rating).Skip(5);
             Display(result.ToList());
         }
+
+        //uc9
+        public void RetriveUsingLikes()
+        {
+            var result = this.productReviews.Where(x => x.IsLike.Equals(true));
+            Display(result.ToList());
+        }
     }
 }

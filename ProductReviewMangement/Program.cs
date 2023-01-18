@@ -40,7 +40,8 @@
             //productReviewMain.RetriveAllRecords();
             //productReviewMain.RetriveAllRecordsGroupBy();
             //productReviewMain.RetriveAllRecordsFields();
-            productReviewMain.SkipTopRecords();
+            //productReviewMain.SkipTopRecords();
+            productReviewMain.RetriveUsingLikes();
         }
     }
 }
