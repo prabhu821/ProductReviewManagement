@@ -41,7 +41,8 @@
             //productReviewMain.RetriveAllRecordsGroupBy();
             //productReviewMain.RetriveAllRecordsFields();
             //productReviewMain.SkipTopRecords();
-            productReviewMain.RetriveUsingLikes();
+            //productReviewMain.RetriveUsingLikes();
+            productReviewMain.AverageRating();
         }
     }
 }

@@ -64,5 +64,11 @@ namespace ProductReviewMangement
             var result = this.productReviews.Where(x => x.IsLike.Equals(true));
             Display(result.ToList());
         }
+        //uc10
+        public void AverageRating()
+        {
+            var result = this.productReviews.Average(x => x.Rating);
+            Console.WriteLine(result);
+        }
     }
 }
