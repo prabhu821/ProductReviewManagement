@@ -39,7 +39,8 @@
             //productReviewMain.RetriveTopRecords();
             //productReviewMain.RetriveAllRecords();
             //productReviewMain.RetriveAllRecordsGroupBy();
-            productReviewMain.RetriveAllRecordsFields();
+            //productReviewMain.RetriveAllRecordsFields();
+            productReviewMain.SkipTopRecords();
         }
     }
 }

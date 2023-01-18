@@ -20,19 +20,19 @@ namespace ProductReviewMangement
                 Console.WriteLine("ProductId: "+item.ProductId + " UserId: "+item.userId + " Rating: "+item.Rating + " Review: "+item.Review + " IsLike: "+item.IsLike);
             }
         }
-        //uc1
+        //uc2
         public void RetriveTopRecords()
         {
             var result = this.productReviews.Where(x => x.Rating == 5).Take(3);
             Display(result.ToList());
         }
-        //uc2
+        //uc3
         public void RetriveAllRecords()
         {
             var result = this.productReviews.Where(x => x.Rating > 3 && (x.ProductId == 1 || x.ProductId == 4 || x.ProductId == 9));
             Display(result.ToList());
         }
-        //uc3
+        //uc4
         public void RetriveAllRecordsGroupBy()
         {
             var result = this.productReviews.GroupBy(x => x.ProductId);
@@ -42,7 +42,7 @@ namespace ProductReviewMangement
                 Display(item.ToList());
             }
         }
-        //uc4
+        //uc5
         public void RetriveAllRecordsFields()
         {
             var result = this.productReviews.Select(x => new { x.ProductId, x.Rating });
@@ -50,6 +50,12 @@ namespace ProductReviewMangement
             {
                 Console.WriteLine(item.ProductId + " " + item.Rating);
             }
+        }
+        //uc6
+        public void SkipTopRecords()
+        {
+            var result = this.productReviews.OrderByDescending(x => x.Rating).Skip(5);
+            Display(result.ToList());
         }
     }
 }
