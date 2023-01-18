@@ -70,5 +70,11 @@ namespace ProductReviewMangement
             var result = this.productReviews.Average(x => x.Rating);
             Console.WriteLine(result);
         }
+        //uc11
+        public void RetriveUsingMessage()
+        {
+            var result = this.productReviews.Where(x => x.Review.Contains("Good"));
+            Display(result.ToList());
+        }
     }
 }
