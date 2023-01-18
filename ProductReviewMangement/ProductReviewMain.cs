@@ -76,5 +76,12 @@ namespace ProductReviewMangement
             var result = this.productReviews.Where(x => x.Review.Contains("Good"));
             Display(result.ToList());
         }
+        //uc12
+        public void RetriveUsingUserId()
+        {
+            var result = this.productReviews.Where(x => x.userId == 5).OrderBy(x => x.Rating);
+            Display(result.ToList());
+        }
+
     }
 }

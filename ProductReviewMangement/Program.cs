@@ -17,11 +17,11 @@
                 new ProductReview() { ProductId = 8, userId = 8, Rating = 5, Review = "Excelent", IsLike = false },
                 new ProductReview() { ProductId = 9, userId = 9, Rating = 5, Review = "Excelent", IsLike = true },
                 new ProductReview() { ProductId = 10, userId = 10, Rating = 4, Review = "Good", IsLike = true },
-                new ProductReview() { ProductId = 11, userId = 11, Rating = 2, Review = "Bad", IsLike = false },
+                new ProductReview() { ProductId = 11, userId = 5, Rating = 2, Review = "Bad", IsLike = false },
                 new ProductReview() { ProductId = 12, userId = 12, Rating = 1, Review = "Worst", IsLike = true },
                 new ProductReview() { ProductId = 13, userId = 13, Rating = 3, Review = "Average", IsLike = true },
                 new ProductReview() { ProductId = 14, userId = 14, Rating = 4, Review = "Good", IsLike = false },
-                new ProductReview() { ProductId = 15, userId = 15, Rating = 3, Review = "Average", IsLike = true },
+                new ProductReview() { ProductId = 15, userId = 5, Rating = 3, Review = "Average", IsLike = true },
                 new ProductReview() { ProductId = 16, userId = 16, Rating = 2, Review = "Bad", IsLike = false },
                 new ProductReview() { ProductId = 17, userId = 17, Rating = 1, Review = "Worst", IsLike = true },
                 new ProductReview() { ProductId = 18, userId = 18, Rating = 3, Review = "Average", IsLike = false },
@@ -31,7 +31,7 @@
                 new ProductReview() { ProductId = 22, userId = 22, Rating = 3, Review = "Average", IsLike = false },
                 new ProductReview() { ProductId = 23, userId = 23, Rating = 4, Review = "Good", IsLike = true },
                 new ProductReview() { ProductId = 24, userId = 24, Rating = 5, Review = "Excelent", IsLike = false },
-                new ProductReview() { ProductId = 25, userId = 25, Rating = 1, Review = "Worst", IsLike = true }
+                new ProductReview() { ProductId = 25, userId = 5, Rating = 1, Review = "Worst", IsLike = true }
             };
 
             ProductReviewMain productReviewMain = new ProductReviewMain();
@@ -43,7 +43,8 @@
             //productReviewMain.SkipTopRecords();
             //productReviewMain.RetriveUsingLikes();
             //productReviewMain.AverageRating();
-            productReviewMain.RetriveUsingMessage();
+            //productReviewMain.RetriveUsingMessage();
+            productReviewMain.RetriveUsingUserId();
         }
     }
 }
